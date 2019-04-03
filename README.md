@@ -1,10 +1,12 @@
 # FilterAPI
-Small coding project to create a FilterAPI for a job application. Created with a time constraint of a few hours
+Small coding project to create a FilterAPI for a job application. Created with a time constraint of a few hours.
 
 Background:
+
 An application manages access to “resource” objects (e.g a user) and we need to provide a Java API for querying the set of available resources. One of the requirements for the query API is to have filtering functionality allowing clients to select resources which match certain criteria. For the sake of simplicity, a “resource” is represented using a Map&lt;String,String> which maps “property” names (keys) to their values. Property names are case sensitive, but property values are not.
 
 Task:
+
 Design and implement a “Filter” API which can be used to determine whether or not a resource matches a given set of
 criteria. More specifically, the filter API should provide the following functionality:
 
