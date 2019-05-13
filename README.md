@@ -1,5 +1,5 @@
 # FilterAPI
-Small coding project to create a FilterAPI for a job application. Created with a time constraint of a few hours.
+Small coding project to create a FilterAPI for a job application.
 
 Background:
 
