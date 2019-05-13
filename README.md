@@ -38,21 +38,14 @@ structure and content of a filter in a type­safe manner.
 Example usage:
 
 // Create user resource having various properties:
-
 Map<String, String> user = new LinkedHashMap<String, String>();
-
 user.put(“firstname”, “Joe”);
-
 user.put(“surname”, “Bloggs”);
-
 user.put(“role”, “administrator”);
-
 user.put(“age”, “35”);
 
 // Create a filter which matches all administrators older than 30:
-
-Filter filter = ???; // Create a filter using your API.
-
+Filter filter = ; // Create a filter using the API.
 assert filter.matches(user); // Filter should match.
 
 user.put(“age”, “25”);
