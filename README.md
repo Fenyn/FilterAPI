@@ -35,20 +35,3 @@ a. Consider how the API could be extended to include support for new types of fi
 b. Consider how the API could support 3rd party applications which need to perform some logic based on the
 structure and content of a filter in a type­safe manner.
 
-Example usage:
-
-// Create user resource having various properties:
-Map<String, String> user = new LinkedHashMap<String, String>();
-user.put(“firstname”, “Joe”);
-user.put(“surname”, “Bloggs”);
-user.put(“role”, “administrator”);
-user.put(“age”, “35”);
-
-// Create a filter which matches all administrators older than 30:
-Filter filter = ; // Create a filter using the API.
-assert filter.matches(user); // Filter should match.
-
-user.put(“age”, “25”);
-
-assert !filter.matches(user); // Filter should not match.
-
